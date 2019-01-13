@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="logo-conteiner row">
+            <div class="col-md-3 offset-2 logo-img"></div>
+            <div class="col-md-5 logo-text">Dark Exist</div>
+        </div>
+        <div class="nav-home">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-home-link nav-link" href="/">Strona Główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-home-link nav-link disabled" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-home-link nav-link disabled" href="#">O Nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-home-link nav-link disabled" href="#">Wsparcie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-home-link nav-link " href="/login">Zaloguj się</a>
+                </li>
+            </ul>
+        </div>
+
+        {% block main %}{% endblock %}
+
+    </div>
+
+    <footer>
+        Przemysław Dąbrowski &copy; 2018 v0.0.1.1
+    </footer>
+
+{% endblock %}
